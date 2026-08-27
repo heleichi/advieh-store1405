@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه ادویه</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #e65100;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #bf360a;
+            font-size: 14px;
+        }
+        .product {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .product-info h3 {
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        .product-info p {
+            color: #666;
+            font-size: 14px;
+        }
+        .price {
+            color: #2e7d32;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .order-btn {
+            background: #e65100;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+            font-size: 16px;
+        }
+        .order-btn:hover {
+            background: #bf360a;
+        }
+        footer {
+            text-align: center;
+            color: #666;
+            margin-top: 30px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌶️ فروشگاه ادویه</h1>
+            <p class="subtitle">بهترین ادویه‌های اصیل ایرانی</p>
+        </header>
+
+        <div class="product">
+            <div class="product-info">
+                <h3>زعفران اعلا</h3>
+                <p>زعفران سوپر نگین درجه یک</p>
+                <button class="order-btn" onclick="order('زعفران')">سفارش</button>
+            </div>
+            <div class="price">۵۰,۰۰۰ ت</div>
+        </div>
+
+        <div class="product">
+            <div class="product-info">
+                <h3>زردچوبه</h3>
+                <p>زردچوبه خالص آسیاب شده</p>
+                <button class="order-btn" onclick="order('زردچوبه')">سفارش</button>
+            </div>
+            <div class="price">۱۵,۰۰۰ ت</div>
+        </div>
+
+        <div class="product">
+            <div class="product-info">
+                <h3>دارچین</h3>
+                <p>دارچین سیلان اصل</p>
+                <button class="order-btn" onclick="order('دارچین')">سفارش</button>
+            </div>
+            <div class="price">۲۵,۰۰۰ ت</div>
+        </div>
+
+        <div class="product">
+            <div class="product-info">
+                <h3>هل سبز</h3>
+                <p>هل اعلا درجه یک</p>
+                <button class="order-btn" onclick="order('هل')">سفارش</button>
+            </div>
+            <div class="price">۴۰,۰۰۰ ت</div>
+        </div>
+
+        <footer>
+            <p>برای سفارش با ما تماس بگیرید</p>
+            <p>📞 ۰۹۱۲XXXXXXX</p>
+        </footer>
+    </div>
+
+    <script>
+        function order(product) {
+            alert('برای سفارش ' + product + ' با شماره ۰۹۱۲XXXXXXX تماس بگیرید');
+        }
+    </script>
+</body>
+</html>
